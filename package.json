@@ -1,7 +1,7 @@
 {
   "name": "static-site",
   "version": "1.0.0",
-  "description": "",
+  "description": "## Description",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,6 +9,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
-  }
+    "inquirer": "^6.3.1",
+    "react-scripts": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abbeyschu/READMEgenerator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/abbeyschu/READMEgenerator/issues"
+  },
+  "homepage": "https://github.com/abbeyschu/READMEgenerator#readme"
 }
