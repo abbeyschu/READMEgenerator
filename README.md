@@ -7,12 +7,22 @@
   
   ## Installation
   
-  Enter instructions here
+  Instigate the application by entering the following in the command line:
+
+```
+node index.js
+```
   
   
   ## Demonstration
+
+  Command-line demo:
   
- ![Video of walkthrough](assets/Demo)
+ ![Video of walkthrough](assets/demo.gif)
+
+ End result:
+
+ ![Video of end result](assets/result.gif)
   
   
   ## License

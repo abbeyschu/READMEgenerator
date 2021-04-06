@@ -13,7 +13,7 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "What provide a description of your project"
+        message: "Provide a description of your project"
     },
     {
         type: "input",
@@ -28,7 +28,7 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "What provide installation instructions for your project"
+        message: "Provide installation instructions for your project"
     },
     {
         type: "input",
