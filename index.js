@@ -17,8 +17,13 @@ const questions = [
     },
     {
         type: "input",
-        name: "link",
-        message: "Provide a link to the repo or deployed site"
+        name: "github",
+        message: "What is your github username?"
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email address?"
     },
     {
         type: "input",
@@ -28,7 +33,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "What are some usage examples for this project?"
+        message: "Enter usage directions for this project"
     },
     {
         type: "input",
@@ -36,9 +41,10 @@ const questions = [
         message: "Who contributed to this project?"
     },
     {
-        type: "input",
+        type: "list",
         name: "license",
-        message: "What license is associated with this project?"
+        message: "Please select a license",
+        choices:["[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)","[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)","[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)","[![License: LGPL v3](https://img.shields.io/badge/License-LGPL%20v3-blue.svg)](https://www.gnu.org/licenses/lgpl-3.0)","[![License: MPL 2.0](https://img.shields.io/badge/License-MPL%202.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)"]
     },
 ];
 
@@ -52,8 +58,7 @@ function writeToFile(fileName, data) {
 function init() {
     inquirer
     .prompt(questions)
-    .then((answers) => writeToFile('README.md', generate(answers)))
-    .then(() => console.log('Successfully wrote to README'))
+    .then((answers) => writeToFile('newREADME.md', generate(answers)))
     .catch((err) => console.error(err));
 }
 
